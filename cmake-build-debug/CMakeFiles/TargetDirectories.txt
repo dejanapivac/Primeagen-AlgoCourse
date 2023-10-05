@@ -1,0 +1,3 @@
+C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug/CMakeFiles/untitled.dir
+C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug/CMakeFiles/rebuild_cache.dir

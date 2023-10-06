@@ -4,3 +4,5 @@ project(untitled)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(untitled main.cpp)
+add_executable(LinearSearch LinearSearch.cpp)
+add_executable(BinarySearch BinarySearch.cpp)

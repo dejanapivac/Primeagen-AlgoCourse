@@ -3,6 +3,10 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 23)
 
+add_subdirectory(Google_Tests)
+
+
 add_executable(untitled main.cpp)
-add_executable(LinearSearch LinearSearch.cpp)
-add_executable(BinarySearch BinarySearch.cpp)
+add_executable(LinearSearch 1_LinearSearch.cpp)
+add_executable(BinarySearch 2_BinarySearch.cpp)
+add_executable(TwoCrystalBalls 3_TwoCrystalBalls.cpp)

@@ -82,8 +82,8 @@ build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.di
 
 build cmake_object_order_depends_target_LinearSearch: phony || CMakeFiles/LinearSearch.dir
 
-build CMakeFiles/LinearSearch.dir/LinearSearch.cpp.obj: CXX_COMPILER__LinearSearch_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/LinearSearch.cpp || cmake_object_order_depends_target_LinearSearch
-  DEP_FILE = CMakeFiles\LinearSearch.dir\LinearSearch.cpp.obj.d
+build CMakeFiles/LinearSearch.dir/1_LinearSearch.cpp.obj: CXX_COMPILER__LinearSearch_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/1_LinearSearch.cpp || cmake_object_order_depends_target_LinearSearch
+  DEP_FILE = CMakeFiles\LinearSearch.dir\1_LinearSearch.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\LinearSearch.dir
   OBJECT_FILE_DIR = CMakeFiles\LinearSearch.dir
@@ -96,7 +96,7 @@ build CMakeFiles/LinearSearch.dir/LinearSearch.cpp.obj: CXX_COMPILER__LinearSear
 #############################################
 # Link the executable LinearSearch.exe
 
-build LinearSearch.exe: CXX_EXECUTABLE_LINKER__LinearSearch_Debug CMakeFiles/LinearSearch.dir/LinearSearch.cpp.obj
+build LinearSearch.exe: CXX_EXECUTABLE_LINKER__LinearSearch_Debug CMakeFiles/LinearSearch.dir/1_LinearSearch.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LinearSearch.dir
@@ -115,8 +115,8 @@ build LinearSearch.exe: CXX_EXECUTABLE_LINKER__LinearSearch_Debug CMakeFiles/Lin
 
 build cmake_object_order_depends_target_BinarySearch: phony || CMakeFiles/BinarySearch.dir
 
-build CMakeFiles/BinarySearch.dir/BinarySearch.cpp.obj: CXX_COMPILER__BinarySearch_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/BinarySearch.cpp || cmake_object_order_depends_target_BinarySearch
-  DEP_FILE = CMakeFiles\BinarySearch.dir\BinarySearch.cpp.obj.d
+build CMakeFiles/BinarySearch.dir/2_BinarySearch.cpp.obj: CXX_COMPILER__BinarySearch_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/2_BinarySearch.cpp || cmake_object_order_depends_target_BinarySearch
+  DEP_FILE = CMakeFiles\BinarySearch.dir\2_BinarySearch.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\BinarySearch.dir
   OBJECT_FILE_DIR = CMakeFiles\BinarySearch.dir
@@ -129,7 +129,7 @@ build CMakeFiles/BinarySearch.dir/BinarySearch.cpp.obj: CXX_COMPILER__BinarySear
 #############################################
 # Link the executable BinarySearch.exe
 
-build BinarySearch.exe: CXX_EXECUTABLE_LINKER__BinarySearch_Debug CMakeFiles/BinarySearch.dir/BinarySearch.cpp.obj
+build BinarySearch.exe: CXX_EXECUTABLE_LINKER__BinarySearch_Debug CMakeFiles/BinarySearch.dir/2_BinarySearch.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\BinarySearch.dir
@@ -138,6 +138,39 @@ build BinarySearch.exe: CXX_EXECUTABLE_LINKER__BinarySearch_Debug CMakeFiles/Bin
   TARGET_FILE = BinarySearch.exe
   TARGET_IMPLIB = libBinarySearch.dll.a
   TARGET_PDB = BinarySearch.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target TwoCrystalBalls
+
+
+#############################################
+# Order-only phony target for TwoCrystalBalls
+
+build cmake_object_order_depends_target_TwoCrystalBalls: phony || CMakeFiles/TwoCrystalBalls.dir
+
+build CMakeFiles/TwoCrystalBalls.dir/3_TwoCrystalBalls.cpp.obj: CXX_COMPILER__TwoCrystalBalls_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/3_TwoCrystalBalls.cpp || cmake_object_order_depends_target_TwoCrystalBalls
+  DEP_FILE = CMakeFiles\TwoCrystalBalls.dir\3_TwoCrystalBalls.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\TwoCrystalBalls.dir
+  OBJECT_FILE_DIR = CMakeFiles\TwoCrystalBalls.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target TwoCrystalBalls
+
+
+#############################################
+# Link the executable TwoCrystalBalls.exe
+
+build TwoCrystalBalls.exe: CXX_EXECUTABLE_LINKER__TwoCrystalBalls_Debug CMakeFiles/TwoCrystalBalls.dir/3_TwoCrystalBalls.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\TwoCrystalBalls.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = TwoCrystalBalls.exe
+  TARGET_IMPLIB = libTwoCrystalBalls.dll.a
+  TARGET_PDB = TwoCrystalBalls.exe.dbg
 
 
 #############################################
@@ -169,6 +202,8 @@ build BinarySearch: phony BinarySearch.exe
 
 build LinearSearch: phony LinearSearch.exe
 
+build TwoCrystalBalls: phony TwoCrystalBalls.exe
+
 build untitled: phony untitled.exe
 
 # =============================================================================
@@ -179,7 +214,7 @@ build untitled: phony untitled.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony untitled.exe LinearSearch.exe BinarySearch.exe
+build all: phony untitled.exe LinearSearch.exe BinarySearch.exe TwoCrystalBalls.exe
 
 # =============================================================================
 # Built-in targets

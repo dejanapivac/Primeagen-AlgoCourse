@@ -15,3 +15,4 @@ bool linear_search(vector<int> numbers, int number) {
 int main() {
     cout <<linear_search({1,2,5,4,3}, 5);
 }
+

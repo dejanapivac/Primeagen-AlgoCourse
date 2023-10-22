@@ -1,28 +1,19 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-
 using namespace std;
 
-int two_crystal_balls(vector<bool> breaks) {
-    const int jumpAmount = floor(sqrt(breaks.size()));
+int two_crystal_balls(vector<bool> arr) {
+    int jumpAmount = floor(sqrt(arr.size()));
     int i = jumpAmount;
-    for (; i < breaks.size(); i += jumpAmount) {
-        if (breaks[i]) {
+    for(; i <= arr.size(); i += jumpAmount) {
+        if(arr[i]) {
             break;
         }
     }
 
-//  i -= jumpAmount;
-
-//    for (int j = 0; j <= jumpAmount && i < breaks.size(); ++j, ++i) {
-//        if(breaks[i]) {
-//            return i;
-//        }
-//    }
-
-    for(int j = i - jumpAmount; j < i; ++j) {
-        if(breaks[j]) {
+    for(int j = i - jumpAmount; j <= i; ++j) {
+        if (arr[j]) {
             return j;
         }
     }
@@ -31,5 +22,5 @@ int two_crystal_balls(vector<bool> breaks) {
 }
 
 int main() {
-    cout << two_crystal_balls({0,0,0,0,1,1,1,1,1,1});
+    cout << two_crystal_balls({0,0,0,1,1,1,1,1});
 }

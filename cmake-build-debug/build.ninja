@@ -172,6 +172,72 @@ build TwoCrystalBalls.exe: CXX_EXECUTABLE_LINKER__TwoCrystalBalls_Debug CMakeFil
   TARGET_IMPLIB = libTwoCrystalBalls.dll.a
   TARGET_PDB = TwoCrystalBalls.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target BubbleSort
+
+
+#############################################
+# Order-only phony target for BubbleSort
+
+build cmake_object_order_depends_target_BubbleSort: phony || CMakeFiles/BubbleSort.dir
+
+build CMakeFiles/BubbleSort.dir/4_BubbleSort.cpp.obj: CXX_COMPILER__BubbleSort_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/4_BubbleSort.cpp || cmake_object_order_depends_target_BubbleSort
+  DEP_FILE = CMakeFiles\BubbleSort.dir\4_BubbleSort.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\BubbleSort.dir
+  OBJECT_FILE_DIR = CMakeFiles\BubbleSort.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BubbleSort
+
+
+#############################################
+# Link the executable BubbleSort.exe
+
+build BubbleSort.exe: CXX_EXECUTABLE_LINKER__BubbleSort_Debug CMakeFiles/BubbleSort.dir/4_BubbleSort.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\BubbleSort.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = BubbleSort.exe
+  TARGET_IMPLIB = libBubbleSort.dll.a
+  TARGET_PDB = BubbleSort.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Queue
+
+
+#############################################
+# Order-only phony target for Queue
+
+build cmake_object_order_depends_target_Queue: phony || CMakeFiles/Queue.dir
+
+build CMakeFiles/Queue.dir/5-Queue.cpp.obj: CXX_COMPILER__Queue_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/5-Queue.cpp || cmake_object_order_depends_target_Queue
+  DEP_FILE = CMakeFiles\Queue.dir\5-Queue.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Queue.dir
+  OBJECT_FILE_DIR = CMakeFiles\Queue.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Queue
+
+
+#############################################
+# Link the executable Queue.exe
+
+build Queue.exe: CXX_EXECUTABLE_LINKER__Queue_Debug CMakeFiles/Queue.dir/5-Queue.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Queue.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Queue.exe
+  TARGET_IMPLIB = libQueue.dll.a
+  TARGET_PDB = Queue.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -200,7 +266,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build BinarySearch: phony BinarySearch.exe
 
+build BubbleSort: phony BubbleSort.exe
+
 build LinearSearch: phony LinearSearch.exe
+
+build Queue: phony Queue.exe
 
 build TwoCrystalBalls: phony TwoCrystalBalls.exe
 
@@ -214,7 +284,7 @@ build untitled: phony untitled.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony untitled.exe LinearSearch.exe BinarySearch.exe TwoCrystalBalls.exe
+build all: phony untitled.exe LinearSearch.exe BinarySearch.exe TwoCrystalBalls.exe BubbleSort.exe Queue.exe
 
 # =============================================================================
 # Built-in targets

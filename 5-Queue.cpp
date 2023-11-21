@@ -1,13 +1,11 @@
 #include <iostream>
-#include <queue>
 
 using namespace std;
 
-// koristi se kada ne znamo tocno tip podatka koji cemo koristit
 template<typename T>
 struct Node {
     T value;
-    Node<T>* next;
+    Node<T> *next;
 };
 
 template<typename T>
@@ -16,43 +14,45 @@ private:
     Node<T> *head, *tail;
 public:
     int length;
+
     Queue() {
         head = tail = NULL;
         length = 0;
     }
 
-    void enqueue(T item) {
+    void enqueue(T input) {
         length++;
-        Node<T> *newNode = new Node<T>();
-        newNode -> value = item;
-        newNode -> next = NULL;
-        if(head == NULL){
+        Node<T> newNode = new Node<T>();
+        newNode -> value = input;
+        newNode . next = NULL;
+        if(!head) {
             head = tail = newNode;
         } else {
             tail -> next = newNode;
             tail = newNode;
-        };
+        }
     }
 
-    T deque() {
+    T dequeue() {
         if(!head) {
             return 0;
         }
+
         length--;
-
-        Node<T>* temp = head;
+        Node<T> *temp = head;
         head = head -> next;
-        //T value = temp ->value; ako zelim sacuvati prijasnju vrijednost heada
-        delete(temp); // moram jer nemam GC
-        return head -> value;
+        T value = temp->value;
+        delete temp;
+        return value;
     }
 
+    //vrati element na pocetku reda
     T peek() {
-        if(!head) {
-            return 0;
-        }
-        // Ako head nije null vrati mi vrijednost koju on ima u sebi
-        return head -> value;
+        return !head ? 0 : head -> value;
     }
-
 };
+
+int main() {
+
+    return 0;
+}

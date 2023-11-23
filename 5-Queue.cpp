@@ -22,9 +22,9 @@ public:
 
     void enqueue(T input) {
         length++;
-        Node<T> newNode = new Node<T>();
+        Node<T>* newNode = new Node<T>();
         newNode -> value = input;
-        newNode . next = NULL;
+        newNode -> next = NULL;
         if(!head) {
             head = tail = newNode;
         } else {
@@ -33,7 +33,7 @@ public:
         }
     }
 
-    T dequeue() {
+    T deque() {
         if(!head) {
             return 0;
         }
@@ -53,6 +53,19 @@ public:
 };
 
 int main() {
+    Queue<int> q;
+    q.enqueue(10);
+    q.enqueue(20);
+    q.enqueue(30);
+    q.enqueue(40);
+
+    cout << "Queue len " << q.length << endl;
+
+    q.deque();
+    cout << "Queue len " << q.length << endl;
+
+    cout << "Peek " << q.peek() << endl;
+
 
     return 0;
 }

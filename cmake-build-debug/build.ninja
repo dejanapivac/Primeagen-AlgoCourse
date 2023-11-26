@@ -41,202 +41,37 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target untitled
+# Object build statements for EXECUTABLE target Recursion
 
 
 #############################################
-# Order-only phony target for untitled
+# Order-only phony target for Recursion
 
-build cmake_object_order_depends_target_untitled: phony || CMakeFiles/untitled.dir
+build cmake_object_order_depends_target_Recursion: phony || CMakeFiles/Recursion.dir
 
-build CMakeFiles/untitled.dir/main.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/main.cpp || cmake_object_order_depends_target_untitled
-  DEP_FILE = CMakeFiles\untitled.dir\main.cpp.obj.d
+build CMakeFiles/Recursion.dir/7_Recursion.cpp.obj: CXX_COMPILER__Recursion_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/7_Recursion.cpp || cmake_object_order_depends_target_Recursion
+  DEP_FILE = CMakeFiles\Recursion.dir\7_Recursion.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\untitled.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+  OBJECT_DIR = CMakeFiles\Recursion.dir
+  OBJECT_FILE_DIR = CMakeFiles\Recursion.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target untitled
+# Link build statements for EXECUTABLE target Recursion
 
 
 #############################################
-# Link the executable untitled.exe
+# Link the executable Recursion.exe
 
-build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj
+build Recursion.exe: CXX_EXECUTABLE_LINKER__Recursion_Debug CMakeFiles/Recursion.dir/7_Recursion.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_DIR = CMakeFiles\Recursion.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = untitled.exe
-  TARGET_IMPLIB = libuntitled.dll.a
-  TARGET_PDB = untitled.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target LinearSearch
-
-
-#############################################
-# Order-only phony target for LinearSearch
-
-build cmake_object_order_depends_target_LinearSearch: phony || CMakeFiles/LinearSearch.dir
-
-build CMakeFiles/LinearSearch.dir/1_LinearSearch.cpp.obj: CXX_COMPILER__LinearSearch_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/1_LinearSearch.cpp || cmake_object_order_depends_target_LinearSearch
-  DEP_FILE = CMakeFiles\LinearSearch.dir\1_LinearSearch.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\LinearSearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\LinearSearch.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target LinearSearch
-
-
-#############################################
-# Link the executable LinearSearch.exe
-
-build LinearSearch.exe: CXX_EXECUTABLE_LINKER__LinearSearch_Debug CMakeFiles/LinearSearch.dir/1_LinearSearch.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\LinearSearch.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = LinearSearch.exe
-  TARGET_IMPLIB = libLinearSearch.dll.a
-  TARGET_PDB = LinearSearch.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target BinarySearch
-
-
-#############################################
-# Order-only phony target for BinarySearch
-
-build cmake_object_order_depends_target_BinarySearch: phony || CMakeFiles/BinarySearch.dir
-
-build CMakeFiles/BinarySearch.dir/2_BinarySearch.cpp.obj: CXX_COMPILER__BinarySearch_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/2_BinarySearch.cpp || cmake_object_order_depends_target_BinarySearch
-  DEP_FILE = CMakeFiles\BinarySearch.dir\2_BinarySearch.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\BinarySearch.dir
-  OBJECT_FILE_DIR = CMakeFiles\BinarySearch.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target BinarySearch
-
-
-#############################################
-# Link the executable BinarySearch.exe
-
-build BinarySearch.exe: CXX_EXECUTABLE_LINKER__BinarySearch_Debug CMakeFiles/BinarySearch.dir/2_BinarySearch.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\BinarySearch.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = BinarySearch.exe
-  TARGET_IMPLIB = libBinarySearch.dll.a
-  TARGET_PDB = BinarySearch.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target TwoCrystalBalls
-
-
-#############################################
-# Order-only phony target for TwoCrystalBalls
-
-build cmake_object_order_depends_target_TwoCrystalBalls: phony || CMakeFiles/TwoCrystalBalls.dir
-
-build CMakeFiles/TwoCrystalBalls.dir/3_TwoCrystalBalls.cpp.obj: CXX_COMPILER__TwoCrystalBalls_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/3_TwoCrystalBalls.cpp || cmake_object_order_depends_target_TwoCrystalBalls
-  DEP_FILE = CMakeFiles\TwoCrystalBalls.dir\3_TwoCrystalBalls.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\TwoCrystalBalls.dir
-  OBJECT_FILE_DIR = CMakeFiles\TwoCrystalBalls.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target TwoCrystalBalls
-
-
-#############################################
-# Link the executable TwoCrystalBalls.exe
-
-build TwoCrystalBalls.exe: CXX_EXECUTABLE_LINKER__TwoCrystalBalls_Debug CMakeFiles/TwoCrystalBalls.dir/3_TwoCrystalBalls.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\TwoCrystalBalls.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = TwoCrystalBalls.exe
-  TARGET_IMPLIB = libTwoCrystalBalls.dll.a
-  TARGET_PDB = TwoCrystalBalls.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target BubbleSort
-
-
-#############################################
-# Order-only phony target for BubbleSort
-
-build cmake_object_order_depends_target_BubbleSort: phony || CMakeFiles/BubbleSort.dir
-
-build CMakeFiles/BubbleSort.dir/4_BubbleSort.cpp.obj: CXX_COMPILER__BubbleSort_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/4_BubbleSort.cpp || cmake_object_order_depends_target_BubbleSort
-  DEP_FILE = CMakeFiles\BubbleSort.dir\4_BubbleSort.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\BubbleSort.dir
-  OBJECT_FILE_DIR = CMakeFiles\BubbleSort.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target BubbleSort
-
-
-#############################################
-# Link the executable BubbleSort.exe
-
-build BubbleSort.exe: CXX_EXECUTABLE_LINKER__BubbleSort_Debug CMakeFiles/BubbleSort.dir/4_BubbleSort.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\BubbleSort.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = BubbleSort.exe
-  TARGET_IMPLIB = libBubbleSort.dll.a
-  TARGET_PDB = BubbleSort.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target Queue
-
-
-#############################################
-# Order-only phony target for Queue
-
-build cmake_object_order_depends_target_Queue: phony || CMakeFiles/Queue.dir
-
-build CMakeFiles/Queue.dir/5-Queue.cpp.obj: CXX_COMPILER__Queue_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/5-Queue.cpp || cmake_object_order_depends_target_Queue
-  DEP_FILE = CMakeFiles\Queue.dir\5-Queue.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Queue.dir
-  OBJECT_FILE_DIR = CMakeFiles\Queue.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Queue
-
-
-#############################################
-# Link the executable Queue.exe
-
-build Queue.exe: CXX_EXECUTABLE_LINKER__Queue_Debug CMakeFiles/Queue.dir/5-Queue.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Queue.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Queue.exe
-  TARGET_IMPLIB = libQueue.dll.a
-  TARGET_PDB = Queue.exe.dbg
+  TARGET_FILE = Recursion.exe
+  TARGET_IMPLIB = libRecursion.dll.a
+  TARGET_PDB = Recursion.exe.dbg
 
 
 #############################################
@@ -264,17 +99,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build BinarySearch: phony BinarySearch.exe
-
-build BubbleSort: phony BubbleSort.exe
-
-build LinearSearch: phony LinearSearch.exe
-
-build Queue: phony Queue.exe
-
-build TwoCrystalBalls: phony TwoCrystalBalls.exe
-
-build untitled: phony untitled.exe
+build Recursion: phony Recursion.exe
 
 # =============================================================================
 # Folder targets.
@@ -284,7 +109,7 @@ build untitled: phony untitled.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony untitled.exe LinearSearch.exe BinarySearch.exe TwoCrystalBalls.exe BubbleSort.exe Queue.exe
+build all: phony Recursion.exe
 
 # =============================================================================
 # Built-in targets

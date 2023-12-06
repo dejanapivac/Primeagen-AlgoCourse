@@ -106,6 +106,39 @@ build Quicksort.exe: CXX_EXECUTABLE_LINKER__Quicksort_Debug CMakeFiles/Quicksort
   TARGET_IMPLIB = libQuicksort.dll.a
   TARGET_PDB = Quicksort.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Recursion2
+
+
+#############################################
+# Order-only phony target for Recursion2
+
+build cmake_object_order_depends_target_Recursion2: phony || CMakeFiles/Recursion2.dir
+
+build CMakeFiles/Recursion2.dir/10_Recursion2.cpp.obj: CXX_COMPILER__Recursion2_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/10_Recursion2.cpp || cmake_object_order_depends_target_Recursion2
+  DEP_FILE = CMakeFiles\Recursion2.dir\10_Recursion2.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Recursion2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Recursion2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Recursion2
+
+
+#############################################
+# Link the executable Recursion2.exe
+
+build Recursion2.exe: CXX_EXECUTABLE_LINKER__Recursion2_Debug CMakeFiles/Recursion2.dir/10_Recursion2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Recursion2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Recursion2.exe
+  TARGET_IMPLIB = libRecursion2.dll.a
+  TARGET_PDB = Recursion2.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,6 +169,8 @@ build Quicksort: phony Quicksort.exe
 
 build Recursion: phony Recursion.exe
 
+build Recursion2: phony Recursion2.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +179,7 @@ build Recursion: phony Recursion.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony Recursion.exe Quicksort.exe
+build all: phony Recursion.exe Quicksort.exe Recursion2.exe
 
 # =============================================================================
 # Built-in targets

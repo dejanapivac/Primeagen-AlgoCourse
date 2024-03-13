@@ -21,8 +21,6 @@ using namespace std;
 void bubble_sort(vector<int>& arr) {
     for (int i = 0; i < arr.size(); ++i) {
         for (int j = 0; j < arr.size() - 1 - i; ++j) {
-            int a = arr[i];
-            int b = arr[j];
             int temp;
             if (arr[j] > arr[j + 1]) {
                 temp = arr[j];

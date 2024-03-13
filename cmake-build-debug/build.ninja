@@ -139,6 +139,72 @@ build Recursion2.exe: CXX_EXECUTABLE_LINKER__Recursion2_Debug CMakeFiles/Recursi
   TARGET_IMPLIB = libRecursion2.dll.a
   TARGET_PDB = Recursion2.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Test
+
+
+#############################################
+# Order-only phony target for Test
+
+build cmake_object_order_depends_target_Test: phony || CMakeFiles/Test.dir
+
+build CMakeFiles/Test.dir/Test.cpp.obj: CXX_COMPILER__Test_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/Test.cpp || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles\Test.dir\Test.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Test
+
+
+#############################################
+# Link the executable Test.exe
+
+build Test.exe: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/Test.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test.exe
+  TARGET_IMPLIB = libTest.dll.a
+  TARGET_PDB = Test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target TestTest
+
+
+#############################################
+# Order-only phony target for TestTest
+
+build cmake_object_order_depends_target_TestTest: phony || CMakeFiles/TestTest.dir
+
+build CMakeFiles/TestTest.dir/TestTest.cpp.obj: CXX_COMPILER__TestTest_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/TestTest.cpp || cmake_object_order_depends_target_TestTest
+  DEP_FILE = CMakeFiles\TestTest.dir\TestTest.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\TestTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\TestTest.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target TestTest
+
+
+#############################################
+# Link the executable TestTest.exe
+
+build TestTest.exe: CXX_EXECUTABLE_LINKER__TestTest_Debug CMakeFiles/TestTest.dir/TestTest.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\TestTest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = TestTest.exe
+  TARGET_IMPLIB = libTestTest.dll.a
+  TARGET_PDB = TestTest.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -171,6 +237,10 @@ build Recursion: phony Recursion.exe
 
 build Recursion2: phony Recursion2.exe
 
+build Test: phony Test.exe
+
+build TestTest: phony TestTest.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +249,7 @@ build Recursion2: phony Recursion2.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony Recursion.exe Quicksort.exe Recursion2.exe
+build all: phony Recursion.exe Quicksort.exe Recursion2.exe Test.exe TestTest.exe
 
 # =============================================================================
 # Built-in targets

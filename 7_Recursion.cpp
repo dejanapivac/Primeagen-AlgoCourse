@@ -33,7 +33,7 @@ bool walk(const vector<vector<char>> &maze, char wall, Point curr, Point end, ve
 
     // at the end
     if (curr.x == end.x && curr.y == end.y) {
-        path.push_back(end); // WHAT???
+        path.push_back(end);
         return true;
     }
 
@@ -48,7 +48,7 @@ bool walk(const vector<vector<char>> &maze, char wall, Point curr, Point end, ve
     path.push_back(curr);
 
     // recurse
-    for (int i = 0; i < sizeof dir; ++i) {
+    for (int i = 0; i < 4; ++i) { // tu je prije bilo < sizeof dir umjesto < 4
         int x = dir[i][0];
         int y = dir[i][1];
         if (walk(maze, wall, {curr.x + x, curr.y + y}, end, seen, path)) {
@@ -80,7 +80,7 @@ int main() {
     // Example usage
     vector<vector<char>> maze = {
             {' ', ' ', '#', ' ', ' ', ' '},
-            {' ', '#', '#', ' ', '#', ' '},
+            {' ', '#', '#', ' ', '#', '#'},
             {' ', ' ', ' ', ' ', ' ', ' '},
             {'#', '#', '#', '#', '#', ' '},
             {' ', ' ', ' ', ' ', ' ', 'E'},

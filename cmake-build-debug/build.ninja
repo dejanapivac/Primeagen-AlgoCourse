@@ -205,6 +205,39 @@ build TestTest.exe: CXX_EXECUTABLE_LINKER__TestTest_Debug CMakeFiles/TestTest.di
   TARGET_IMPLIB = libTestTest.dll.a
   TARGET_PDB = TestTest.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target DoublyLinkedList
+
+
+#############################################
+# Order-only phony target for DoublyLinkedList
+
+build cmake_object_order_depends_target_DoublyLinkedList: phony || CMakeFiles/DoublyLinkedList.dir
+
+build CMakeFiles/DoublyLinkedList.dir/9_DoublyLinkedList.cpp.obj: CXX_COMPILER__DoublyLinkedList_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/9_DoublyLinkedList.cpp || cmake_object_order_depends_target_DoublyLinkedList
+  DEP_FILE = CMakeFiles\DoublyLinkedList.dir\9_DoublyLinkedList.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\DoublyLinkedList.dir
+  OBJECT_FILE_DIR = CMakeFiles\DoublyLinkedList.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target DoublyLinkedList
+
+
+#############################################
+# Link the executable DoublyLinkedList.exe
+
+build DoublyLinkedList.exe: CXX_EXECUTABLE_LINKER__DoublyLinkedList_Debug CMakeFiles/DoublyLinkedList.dir/9_DoublyLinkedList.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\DoublyLinkedList.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = DoublyLinkedList.exe
+  TARGET_IMPLIB = libDoublyLinkedList.dll.a
+  TARGET_PDB = DoublyLinkedList.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -231,6 +264,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build DoublyLinkedList: phony DoublyLinkedList.exe
+
 build Quicksort: phony Quicksort.exe
 
 build Recursion: phony Recursion.exe
@@ -249,7 +284,7 @@ build TestTest: phony TestTest.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony Recursion.exe Quicksort.exe Recursion2.exe Test.exe TestTest.exe
+build all: phony Recursion.exe Quicksort.exe Recursion2.exe Test.exe TestTest.exe DoublyLinkedList.exe
 
 # =============================================================================
 # Built-in targets

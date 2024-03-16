@@ -1,44 +1,153 @@
 #include <iostream>
-#include <vector>
-
 using namespace std;
 
-int partition(vector<int> &arr, int lo, int hi) {
-    int pivot = arr[hi];
-    int idx = lo - 1;
+template<typename T>
+struct Node {
+    T value;
+    Node<T> *prev, *next;
+};
 
-    for (int i = 0; i < hi; ++i) {
-        if (arr[i] <= pivot) {
-            idx++;
-            int temp = arr[i];
-            arr[i] = arr[idx];
-            arr[idx] = temp;
+template<typename T>
+class DoublyLinkedList {
+private:
+    Node<T> *head, *tail;
+public:
+    int length;
+
+    DoublyLinkedList(){
+        length = 0;
+        head = tail = NULL;
+    }
+
+    void prepend(T value){
+        Node<T> *newNode = new Node<T>;
+        newNode -> value = value;
+        length++;
+
+        if(!head) {
+            head = tail = newNode;
         }
+
+        head -> prev = newNode;
+        newNode -> next = head;
+        head = newNode;
     }
 
-    idx++;
-    arr[hi] = arr[idx];
-    arr[idx] = pivot;
+    void append(T value) {
+        Node<T> *newNode = new Node<T>;
+        newNode -> value = value;
+        length++;
 
-    return idx;
-}
+        if(!tail) {
+            head = tail = newNode;
+        }
 
-void qs(vector<int> &arr, int lo, int hi) {
-    if(lo >= hi) {
-        return;
+        tail -> next = newNode;
+        newNode -> prev = tail;
+        tail = newNode;
     }
 
-    int pivotIdx = partition(arr, lo, hi);
-    qs(arr, lo, pivotIdx -1);
-    qs(arr, pivotIdx)
-}
+    void insertAt(T value, int idx) {
+        Node<T> *newNode = new Node<T>;
+        newNode -> value = value;
 
-void quick_sort(vector<int> &arr) {
-    qs(arr, 0, arr.size() - 1);
-}
+        Node<T> *curr = head;
+        for(int i = 0; curr && i < length; ++i) {
+            if(i == idx) {
+                break;
+            }
+            curr = curr -> next;
+        }
+
+        if(curr == head) {
+            prepend(value);
+        }
+
+        if(curr == tail) {
+            append(value);
+        }
+
+        length++;
+        if(!curr) {
+            head = tail = newNode;
+        }
+
+        newNode -> prev = curr -> prev;
+        curr -> prev -> next = newNode;
+        curr -> prev = newNode;
+        newNode -> next = curr;
+    }
+
+    T remove (T value) {
+        Node<T> *curr = head;
+        T out = curr -> value;
+
+        if(!curr) {
+            return T();
+        }
+
+        while(curr) {
+            if(curr -> value == value) {
+                break;
+            }
+            curr = curr -> next;
+        }
+
+        length--;
+        if(length == 0) {
+            head = tail = NULL;
+            return T();
+        }
+
+        if(curr == head) {
+            head = head -> next;
+            return out;
+        }
+
+        if(curr == tail) {
+            tail = curr -> prev;
+            return out;
+        }
+
+        curr -> prev -> next = curr -> next;
+        curr -> next -> prev = curr -> prev;
+
+        return out;
+    }
+
+    void printList() {
+        Node<T> *curr = head;
+        while (curr) {
+            cout << curr -> value <<" ";
+            if(curr == tail) {
+                break;
+            }
+            curr = curr -> next;
+        }
+        cout << endl;
+    }
+};
 
 int main() {
 
+    DoublyLinkedList<int> dll;
 
+    dll.prepend(1);
+    dll.prepend(2);
+    dll.prepend(3);
+    dll.printList();
+    cout<<"--------------------------"<<endl;
+
+    dll.append(4);
+    dll.append(5);
+    dll.printList();
+    cout<<"--------------------------"<<endl;
+
+    dll.insertAt(7, 3);
+    dll.printList();
+    cout<<"--------------------------"<<endl;
+
+    dll.remove(7);
+    dll.printList();
     return 0;
 }

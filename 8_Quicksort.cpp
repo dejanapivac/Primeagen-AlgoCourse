@@ -44,16 +44,16 @@ int main() {
 
     vector<int> arr = {5,7,2,1,8,9};
 
-    for(int i = 0; i < arr.size(); ++i) {
-        cout<<arr[i]<<", ";
+    for(int i : arr) {
+        cout<<i<<", ";
     }
 
     cout<<endl;
 
     quick_sort(arr);
 
-    for(int i = 0; i < arr.size(); ++i) {
-        cout<<arr[i]<<", ";
+    for(int i : arr) {
+        cout<<i<<", ";
     }
 
 

@@ -1,6 +1,4 @@
 #include <iostream>
-#include <vector>
-
 using namespace std;
 
 template<typename T>
@@ -16,177 +14,181 @@ private:
 public:
     int length;
 
-    DoublyLinkedList() {
+    DoublyLinkedList(){
         length = 0;
         head = tail = NULL;
     }
 
-    void prepend(T item) {
+    void prepend(T value){
         Node<T> *newNode = new Node<T>;
-        newNode->value = item;
+        newNode -> value = value;
         length++;
-        if (!head) {
+
+        if(!head) {
             head = tail = newNode;
-            return;
         }
-        newNode->next = head;
-        head->prev = newNode;
+
+        head -> prev = newNode;
+        newNode -> next = head;
         head = newNode;
     }
 
-    void insertAt(T item, int idx) {
-        if (idx > length) {
-            return; //OVO MOZDA NIJE BAS DOBRO
-        } else if (idx == length) {
-            append(item);
-        } else if (idx == 0) {
-            prepend(item);
-        }
-
-        length++;
-        Node<T> *curr = head;
-        for (int i = 0; curr && i < idx; ++i) {
-            cout << curr->value << endl;
-            curr = curr->next;
-        }
-
-//        Node<T>* curr = getAt(idx);
-
-        //curr = curr as Node<T> nest tako je on napisao
-        Node<T> *insertedNode = new Node<T>;
-        insertedNode->value = item;
-        insertedNode->next = curr;
-        insertedNode->prev = curr->prev;
-        curr->prev->next = insertedNode;
-        curr->prev = insertedNode;
-    }
-
     void append(T value) {
-        length++;
         Node<T> *newNode = new Node<T>;
-        newNode->value = value;
-        if (!tail) {
+        newNode -> value = value;
+        length++;
+
+        if(!tail) {
             head = tail = newNode;
-            return;
         }
 
-        newNode->prev = tail;
-        tail->next = newNode;
+        tail -> next = newNode;
+        newNode -> prev = tail;
         tail = newNode;
     }
 
-    T remove(T value) {
-        Node<T> *curr = head;
+    void insertAt(T value, int idx) {
+        Node<T> *newNode = new Node<T>;
+        newNode -> value = value;
 
-        if (!curr) {
+        Node<T> *curr = head;
+        for(int i = 0; curr && i < length; ++i) {
+            if(i == idx) {
+                break;
+            }
+            curr = curr -> next;
+        }
+
+        if(curr == head) {
+            prepend(value);
+        }
+
+        if(curr == tail) {
+            append(value);
+        }
+
+        length++;
+        if(!curr) {
+            head = tail = newNode;
+        }
+
+        newNode -> prev = curr -> prev;
+        curr -> prev -> next = newNode;
+        curr -> prev = newNode;
+        newNode -> next = curr;
+    }
+
+    T remove (T value) {
+        Node<T> *curr = head;
+        T out = curr -> value;
+
+        if(!curr) {
             return T();
         }
 
-        while (curr) {
-            if (curr->value == value) {
+        while(curr) {
+            if(curr -> value == value) {
                 break;
-            } else if (curr == tail && curr->value == value) {
-                break;
-            } else if (curr == tail && curr->value != value) {
-                return T();
-            } else {
-                curr = curr->next;
             }
+            curr = curr -> next;
         }
-
 
         length--;
-        T out = curr->value;
-        if (length == 0) {
-            out = head->value;
-            head = tail = nullptr;
+        if(length == 0) {
+            head = tail = NULL;
+            return T();
+        }
+
+        if(curr == head) {
+            head = head -> next;
             return out;
         }
 
-        if (curr == head) {
-            out = head -> value;
-            head = curr->next;
+        if(curr == tail) {
+            tail = curr -> prev;
             return out;
         }
 
-        if (curr == tail) {
-            out = tail -> value;
-            tail = curr->prev;
-            return out;
-        }
-
-        if (curr->prev) {
-            out = curr -> value;
-            curr->prev->next = curr->next;
-        }
-
-        if (curr->next) {
-            out = curr -> value;
-            curr->next->prev = curr->prev;
-        }
-
-//        curr->prev = curr->next = nullptr;
-        delete curr;
+        curr -> prev -> next = curr -> next;
+        curr -> next -> prev = curr -> prev;
 
         return out;
     }
 
-    T get(int idx) {
-        Node<T> node = getAt(idx);
-        return getAt(idx) ? node->value : T();
-    }
-
-    Node<T> getAt(int idx) {
+    T removeAt(int idx) {
         Node<T> *curr = head;
-        for(int i = 0; curr && i < idx; ++i) {
+        T out = curr -> value;
+        if(!curr) {
+            return T();
+        }
+
+        for(int i = 0; curr && i < length; ++i) {
+            if(i == idx) {
+                break;
+            }
             curr = curr -> next;
         }
 
-        return *curr;
+        length--;
+        if(length == 0) {
+            head = tail = NULL;
+            return T();
+        }
+
+        if(curr == head) {
+            head = head -> next;
+            return out;
+        }
+
+        if(curr == tail) {
+            tail = curr -> prev;
+            return out;
+        }
+
+        curr -> prev -> next = curr -> next;
+        curr -> next -> prev = curr -> prev;
+
+        return out;
     }
 
     void printList() {
         Node<T> *curr = head;
         while (curr) {
-            cout << curr->value << endl;
-            if (curr == tail) {
+            cout << curr -> value <<" ";
+            if(curr == tail) {
                 break;
             }
-            curr = curr->next;
+            curr = curr -> next;
         }
+        cout << endl;
     }
 };
 
-
 int main() {
 
-    DoublyLinkedList<int> dLL;
+    DoublyLinkedList<int> dll;
 
-    dLL.append(1);
-    dLL.append(2);
-    dLL.append(3);
-    dLL.append(4);
-    dLL.append(5);
+    dll.prepend(1);
+    dll.prepend(2);
+    dll.prepend(3);
+    dll.printList();
+    cout<<"--------------------------"<<endl;
 
-    cout << dLL.length << endl;
-    dLL.printList();
-    cout << "------------------------" << endl;
+    dll.append(4);
+    dll.append(5);
+    dll.printList();
+    cout<<"--------------------------"<<endl;
 
-    dLL.insertAt(7, 2);
-    cout << "ovde" << endl;
-    dLL.printList();
-    cout << "------------------------" << endl;
-    dLL.insertAt(9, 3);
-    dLL.printList();
-    cout << "------------------------" << endl;
+    dll.insertAt(7, 3);
+    dll.printList();
+    cout<<"--------------------------"<<endl;
 
+    dll.remove(7);
+    dll.printList();
+    cout<<"--------------------------"<<endl;
 
-    dLL.remove(1);
-    dLL.printList();
-    dLL.getAt(2);
-
-//    cout << dLL.length;
-//    cout << endl;
-
+    dll.removeAt(2);
+    dll.printList();
+    cout<<"--------------------------"<<endl;
     return 0;
 }

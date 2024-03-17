@@ -115,6 +115,42 @@ public:
         return out;
     }
 
+    T removeAt(int idx) {
+        Node<T> *curr = head;
+        T out = curr -> value;
+        if(!curr) {
+            return T();
+        }
+
+        for(int i = 0; curr && i < length; ++i) {
+            if(i == idx) {
+                break;
+            }
+            curr = curr -> next;
+        }
+
+        length--;
+        if(length == 0) {
+            head = tail = NULL;
+            return T();
+        }
+
+        if(curr == head) {
+            head = head -> next;
+            return out;
+        }
+
+        if(curr == tail) {
+            tail = curr -> prev;
+            return out;
+        }
+
+        curr -> prev -> next = curr -> next;
+        curr -> next -> prev = curr -> prev;
+
+        return out;
+    }
+
     void printList() {
         Node<T> *curr = head;
         while (curr) {
@@ -149,5 +185,10 @@ int main() {
 
     dll.remove(7);
     dll.printList();
+    cout<<"--------------------------"<<endl;
+
+    dll.removeAt(2);
+    dll.printList();
+    cout<<"--------------------------"<<endl;
     return 0;
 }

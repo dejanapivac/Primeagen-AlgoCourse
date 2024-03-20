@@ -41,103 +41,37 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Recursion
+# Object build statements for EXECUTABLE target Plaindrome
 
 
 #############################################
-# Order-only phony target for Recursion
+# Order-only phony target for Plaindrome
 
-build cmake_object_order_depends_target_Recursion: phony || CMakeFiles/Recursion.dir
+build cmake_object_order_depends_target_Plaindrome: phony || CMakeFiles/Plaindrome.dir
 
-build CMakeFiles/Recursion.dir/7_Recursion.cpp.obj: CXX_COMPILER__Recursion_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/7_Recursion.cpp || cmake_object_order_depends_target_Recursion
-  DEP_FILE = CMakeFiles\Recursion.dir\7_Recursion.cpp.obj.d
+build CMakeFiles/Plaindrome.dir/10_Palindrome.cpp.obj: CXX_COMPILER__Plaindrome_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/10_Palindrome.cpp || cmake_object_order_depends_target_Plaindrome
+  DEP_FILE = CMakeFiles\Plaindrome.dir\10_Palindrome.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Recursion.dir
-  OBJECT_FILE_DIR = CMakeFiles\Recursion.dir
+  OBJECT_DIR = CMakeFiles\Plaindrome.dir
+  OBJECT_FILE_DIR = CMakeFiles\Plaindrome.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Recursion
+# Link build statements for EXECUTABLE target Plaindrome
 
 
 #############################################
-# Link the executable Recursion.exe
+# Link the executable Plaindrome.exe
 
-build Recursion.exe: CXX_EXECUTABLE_LINKER__Recursion_Debug CMakeFiles/Recursion.dir/7_Recursion.cpp.obj
+build Plaindrome.exe: CXX_EXECUTABLE_LINKER__Plaindrome_Debug CMakeFiles/Plaindrome.dir/10_Palindrome.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Recursion.dir
+  OBJECT_DIR = CMakeFiles\Plaindrome.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = Recursion.exe
-  TARGET_IMPLIB = libRecursion.dll.a
-  TARGET_PDB = Recursion.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target Quicksort
-
-
-#############################################
-# Order-only phony target for Quicksort
-
-build cmake_object_order_depends_target_Quicksort: phony || CMakeFiles/Quicksort.dir
-
-build CMakeFiles/Quicksort.dir/8_Quicksort.cpp.obj: CXX_COMPILER__Quicksort_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/8_Quicksort.cpp || cmake_object_order_depends_target_Quicksort
-  DEP_FILE = CMakeFiles\Quicksort.dir\8_Quicksort.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Quicksort.dir
-  OBJECT_FILE_DIR = CMakeFiles\Quicksort.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Quicksort
-
-
-#############################################
-# Link the executable Quicksort.exe
-
-build Quicksort.exe: CXX_EXECUTABLE_LINKER__Quicksort_Debug CMakeFiles/Quicksort.dir/8_Quicksort.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Quicksort.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Quicksort.exe
-  TARGET_IMPLIB = libQuicksort.dll.a
-  TARGET_PDB = Quicksort.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target Recursion2
-
-
-#############################################
-# Order-only phony target for Recursion2
-
-build cmake_object_order_depends_target_Recursion2: phony || CMakeFiles/Recursion2.dir
-
-build CMakeFiles/Recursion2.dir/10_Recursion2.cpp.obj: CXX_COMPILER__Recursion2_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/10_Recursion2.cpp || cmake_object_order_depends_target_Recursion2
-  DEP_FILE = CMakeFiles\Recursion2.dir\10_Recursion2.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Recursion2.dir
-  OBJECT_FILE_DIR = CMakeFiles\Recursion2.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Recursion2
-
-
-#############################################
-# Link the executable Recursion2.exe
-
-build Recursion2.exe: CXX_EXECUTABLE_LINKER__Recursion2_Debug CMakeFiles/Recursion2.dir/10_Recursion2.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Recursion2.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Recursion2.exe
-  TARGET_IMPLIB = libRecursion2.dll.a
-  TARGET_PDB = Recursion2.exe.dbg
+  TARGET_FILE = Plaindrome.exe
+  TARGET_IMPLIB = libPlaindrome.dll.a
+  TARGET_PDB = Plaindrome.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target Test
@@ -173,70 +107,37 @@ build Test.exe: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/Test.cpp.o
   TARGET_PDB = Test.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target TestTest
+# Object build statements for EXECUTABLE target EveryPalind
 
 
 #############################################
-# Order-only phony target for TestTest
+# Order-only phony target for EveryPalind
 
-build cmake_object_order_depends_target_TestTest: phony || CMakeFiles/TestTest.dir
+build cmake_object_order_depends_target_EveryPalind: phony || CMakeFiles/EveryPalind.dir
 
-build CMakeFiles/TestTest.dir/TestTest.cpp.obj: CXX_COMPILER__TestTest_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/TestTest.cpp || cmake_object_order_depends_target_TestTest
-  DEP_FILE = CMakeFiles\TestTest.dir\TestTest.cpp.obj.d
+build CMakeFiles/EveryPalind.dir/11_EveryPalindrome.cpp.obj: CXX_COMPILER__EveryPalind_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/11_EveryPalindrome.cpp || cmake_object_order_depends_target_EveryPalind
+  DEP_FILE = CMakeFiles\EveryPalind.dir\11_EveryPalindrome.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\TestTest.dir
-  OBJECT_FILE_DIR = CMakeFiles\TestTest.dir
+  OBJECT_DIR = CMakeFiles\EveryPalind.dir
+  OBJECT_FILE_DIR = CMakeFiles\EveryPalind.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target TestTest
+# Link build statements for EXECUTABLE target EveryPalind
 
 
 #############################################
-# Link the executable TestTest.exe
+# Link the executable EveryPalind.exe
 
-build TestTest.exe: CXX_EXECUTABLE_LINKER__TestTest_Debug CMakeFiles/TestTest.dir/TestTest.cpp.obj
+build EveryPalind.exe: CXX_EXECUTABLE_LINKER__EveryPalind_Debug CMakeFiles/EveryPalind.dir/11_EveryPalindrome.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\TestTest.dir
+  OBJECT_DIR = CMakeFiles\EveryPalind.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = TestTest.exe
-  TARGET_IMPLIB = libTestTest.dll.a
-  TARGET_PDB = TestTest.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target DoublyLinkedList
-
-
-#############################################
-# Order-only phony target for DoublyLinkedList
-
-build cmake_object_order_depends_target_DoublyLinkedList: phony || CMakeFiles/DoublyLinkedList.dir
-
-build CMakeFiles/DoublyLinkedList.dir/9_DoublyLinkedList.cpp.obj: CXX_COMPILER__DoublyLinkedList_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/9_DoublyLinkedList.cpp || cmake_object_order_depends_target_DoublyLinkedList
-  DEP_FILE = CMakeFiles\DoublyLinkedList.dir\9_DoublyLinkedList.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\DoublyLinkedList.dir
-  OBJECT_FILE_DIR = CMakeFiles\DoublyLinkedList.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target DoublyLinkedList
-
-
-#############################################
-# Link the executable DoublyLinkedList.exe
-
-build DoublyLinkedList.exe: CXX_EXECUTABLE_LINKER__DoublyLinkedList_Debug CMakeFiles/DoublyLinkedList.dir/9_DoublyLinkedList.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\DoublyLinkedList.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = DoublyLinkedList.exe
-  TARGET_IMPLIB = libDoublyLinkedList.dll.a
-  TARGET_PDB = DoublyLinkedList.exe.dbg
+  TARGET_FILE = EveryPalind.exe
+  TARGET_IMPLIB = libEveryPalind.dll.a
+  TARGET_PDB = EveryPalind.exe.dbg
 
 
 #############################################
@@ -264,17 +165,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build DoublyLinkedList: phony DoublyLinkedList.exe
+build EveryPalind: phony EveryPalind.exe
 
-build Quicksort: phony Quicksort.exe
-
-build Recursion: phony Recursion.exe
-
-build Recursion2: phony Recursion2.exe
+build Plaindrome: phony Plaindrome.exe
 
 build Test: phony Test.exe
-
-build TestTest: phony TestTest.exe
 
 # =============================================================================
 # Folder targets.
@@ -284,7 +179,7 @@ build TestTest: phony TestTest.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony Recursion.exe Quicksort.exe Recursion2.exe Test.exe TestTest.exe DoublyLinkedList.exe
+build all: phony Plaindrome.exe Test.exe EveryPalind.exe
 
 # =============================================================================
 # Built-in targets

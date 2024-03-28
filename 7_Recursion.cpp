@@ -49,8 +49,8 @@ bool walk(const vector<vector<char>> &maze, char wall, Point curr, Point end, ve
 
     // recurse
     for (int i = 0; i < 4; ++i) { // tu je prije bilo < sizeof dir umjesto < 4
-        int x = dir[i][0];
-        int y = dir[i][1];
+        int x = dir[i][0];  // u polju prvi stupac
+        int y = dir[i][1];  // u polju drugi stupac
         if (walk(maze, wall, {curr.x + x, curr.y + y}, end, seen, path)) {
             return true;
         }

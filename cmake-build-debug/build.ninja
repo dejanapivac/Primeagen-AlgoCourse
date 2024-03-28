@@ -41,6 +41,39 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target Recursion
+
+
+#############################################
+# Order-only phony target for Recursion
+
+build cmake_object_order_depends_target_Recursion: phony || CMakeFiles/Recursion.dir
+
+build CMakeFiles/Recursion.dir/7_Recursion.cpp.obj: CXX_COMPILER__Recursion_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/7_Recursion.cpp || cmake_object_order_depends_target_Recursion
+  DEP_FILE = CMakeFiles\Recursion.dir\7_Recursion.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Recursion.dir
+  OBJECT_FILE_DIR = CMakeFiles\Recursion.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Recursion
+
+
+#############################################
+# Link the executable Recursion.exe
+
+build Recursion.exe: CXX_EXECUTABLE_LINKER__Recursion_Debug CMakeFiles/Recursion.dir/7_Recursion.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Recursion.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Recursion.exe
+  TARGET_IMPLIB = libRecursion.dll.a
+  TARGET_PDB = Recursion.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Plaindrome
 
 
@@ -169,6 +202,8 @@ build EveryPalind: phony EveryPalind.exe
 
 build Plaindrome: phony Plaindrome.exe
 
+build Recursion: phony Recursion.exe
+
 build Test: phony Test.exe
 
 # =============================================================================
@@ -179,7 +214,7 @@ build Test: phony Test.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony Plaindrome.exe Test.exe EveryPalind.exe
+build all: phony Recursion.exe Plaindrome.exe Test.exe EveryPalind.exe
 
 # =============================================================================
 # Built-in targets

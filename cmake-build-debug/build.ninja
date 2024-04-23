@@ -41,171 +41,6 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Recursion
-
-
-#############################################
-# Order-only phony target for Recursion
-
-build cmake_object_order_depends_target_Recursion: phony || CMakeFiles/Recursion.dir
-
-build CMakeFiles/Recursion.dir/7_Recursion.cpp.obj: CXX_COMPILER__Recursion_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/7_Recursion.cpp || cmake_object_order_depends_target_Recursion
-  DEP_FILE = CMakeFiles\Recursion.dir\7_Recursion.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Recursion.dir
-  OBJECT_FILE_DIR = CMakeFiles\Recursion.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Recursion
-
-
-#############################################
-# Link the executable Recursion.exe
-
-build Recursion.exe: CXX_EXECUTABLE_LINKER__Recursion_Debug CMakeFiles/Recursion.dir/7_Recursion.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Recursion.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Recursion.exe
-  TARGET_IMPLIB = libRecursion.dll.a
-  TARGET_PDB = Recursion.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target Quicksort
-
-
-#############################################
-# Order-only phony target for Quicksort
-
-build cmake_object_order_depends_target_Quicksort: phony || CMakeFiles/Quicksort.dir
-
-build CMakeFiles/Quicksort.dir/8_Quicksort.cpp.obj: CXX_COMPILER__Quicksort_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/8_Quicksort.cpp || cmake_object_order_depends_target_Quicksort
-  DEP_FILE = CMakeFiles\Quicksort.dir\8_Quicksort.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Quicksort.dir
-  OBJECT_FILE_DIR = CMakeFiles\Quicksort.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Quicksort
-
-
-#############################################
-# Link the executable Quicksort.exe
-
-build Quicksort.exe: CXX_EXECUTABLE_LINKER__Quicksort_Debug CMakeFiles/Quicksort.dir/8_Quicksort.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Quicksort.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Quicksort.exe
-  TARGET_IMPLIB = libQuicksort.dll.a
-  TARGET_PDB = Quicksort.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target Plaindrome
-
-
-#############################################
-# Order-only phony target for Plaindrome
-
-build cmake_object_order_depends_target_Plaindrome: phony || CMakeFiles/Plaindrome.dir
-
-build CMakeFiles/Plaindrome.dir/10_Palindrome.cpp.obj: CXX_COMPILER__Plaindrome_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/10_Palindrome.cpp || cmake_object_order_depends_target_Plaindrome
-  DEP_FILE = CMakeFiles\Plaindrome.dir\10_Palindrome.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Plaindrome.dir
-  OBJECT_FILE_DIR = CMakeFiles\Plaindrome.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Plaindrome
-
-
-#############################################
-# Link the executable Plaindrome.exe
-
-build Plaindrome.exe: CXX_EXECUTABLE_LINKER__Plaindrome_Debug CMakeFiles/Plaindrome.dir/10_Palindrome.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Plaindrome.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Plaindrome.exe
-  TARGET_IMPLIB = libPlaindrome.dll.a
-  TARGET_PDB = Plaindrome.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target Test
-
-
-#############################################
-# Order-only phony target for Test
-
-build cmake_object_order_depends_target_Test: phony || CMakeFiles/Test.dir
-
-build CMakeFiles/Test.dir/Test.cpp.obj: CXX_COMPILER__Test_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/Test.cpp || cmake_object_order_depends_target_Test
-  DEP_FILE = CMakeFiles\Test.dir\Test.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Test.dir
-  OBJECT_FILE_DIR = CMakeFiles\Test.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Test
-
-
-#############################################
-# Link the executable Test.exe
-
-build Test.exe: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/Test.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Test.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Test.exe
-  TARGET_IMPLIB = libTest.dll.a
-  TARGET_PDB = Test.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target EveryPalind
-
-
-#############################################
-# Order-only phony target for EveryPalind
-
-build cmake_object_order_depends_target_EveryPalind: phony || CMakeFiles/EveryPalind.dir
-
-build CMakeFiles/EveryPalind.dir/11_EveryPalindrome.cpp.obj: CXX_COMPILER__EveryPalind_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/11_EveryPalindrome.cpp || cmake_object_order_depends_target_EveryPalind
-  DEP_FILE = CMakeFiles\EveryPalind.dir\11_EveryPalindrome.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\EveryPalind.dir
-  OBJECT_FILE_DIR = CMakeFiles\EveryPalind.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target EveryPalind
-
-
-#############################################
-# Link the executable EveryPalind.exe
-
-build EveryPalind.exe: CXX_EXECUTABLE_LINKER__EveryPalind_Debug CMakeFiles/EveryPalind.dir/11_EveryPalindrome.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\EveryPalind.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = EveryPalind.exe
-  TARGET_IMPLIB = libEveryPalind.dll.a
-  TARGET_PDB = EveryPalind.exe.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target BTPreorder
 
 
@@ -238,6 +73,105 @@ build BTPreorder.exe: CXX_EXECUTABLE_LINKER__BTPreorder_Debug CMakeFiles/BTPreor
   TARGET_IMPLIB = libBTPreorder.dll.a
   TARGET_PDB = BTPreorder.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target BTInorder
+
+
+#############################################
+# Order-only phony target for BTInorder
+
+build cmake_object_order_depends_target_BTInorder: phony || CMakeFiles/BTInorder.dir
+
+build CMakeFiles/BTInorder.dir/13_BTInorder.cpp.obj: CXX_COMPILER__BTInorder_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/13_BTInorder.cpp || cmake_object_order_depends_target_BTInorder
+  DEP_FILE = CMakeFiles\BTInorder.dir\13_BTInorder.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\BTInorder.dir
+  OBJECT_FILE_DIR = CMakeFiles\BTInorder.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BTInorder
+
+
+#############################################
+# Link the executable BTInorder.exe
+
+build BTInorder.exe: CXX_EXECUTABLE_LINKER__BTInorder_Debug CMakeFiles/BTInorder.dir/13_BTInorder.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\BTInorder.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = BTInorder.exe
+  TARGET_IMPLIB = libBTInorder.dll.a
+  TARGET_PDB = BTInorder.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target INOSuccessor
+
+
+#############################################
+# Order-only phony target for INOSuccessor
+
+build cmake_object_order_depends_target_INOSuccessor: phony || CMakeFiles/INOSuccessor.dir
+
+build CMakeFiles/INOSuccessor.dir/14_LC510_INOSuccessor.cpp.obj: CXX_COMPILER__INOSuccessor_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/14_LC510_INOSuccessor.cpp || cmake_object_order_depends_target_INOSuccessor
+  DEP_FILE = CMakeFiles\INOSuccessor.dir\14_LC510_INOSuccessor.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\INOSuccessor.dir
+  OBJECT_FILE_DIR = CMakeFiles\INOSuccessor.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target INOSuccessor
+
+
+#############################################
+# Link the executable INOSuccessor.exe
+
+build INOSuccessor.exe: CXX_EXECUTABLE_LINKER__INOSuccessor_Debug CMakeFiles/INOSuccessor.dir/14_LC510_INOSuccessor.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\INOSuccessor.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = INOSuccessor.exe
+  TARGET_IMPLIB = libINOSuccessor.dll.a
+  TARGET_PDB = INOSuccessor.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target BTPostorder
+
+
+#############################################
+# Order-only phony target for BTPostorder
+
+build cmake_object_order_depends_target_BTPostorder: phony || CMakeFiles/BTPostorder.dir
+
+build CMakeFiles/BTPostorder.dir/15_BTPostorder.cpp.obj: CXX_COMPILER__BTPostorder_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/15_BTPostorder.cpp || cmake_object_order_depends_target_BTPostorder
+  DEP_FILE = CMakeFiles\BTPostorder.dir\15_BTPostorder.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\BTPostorder.dir
+  OBJECT_FILE_DIR = CMakeFiles\BTPostorder.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BTPostorder
+
+
+#############################################
+# Link the executable BTPostorder.exe
+
+build BTPostorder.exe: CXX_EXECUTABLE_LINKER__BTPostorder_Debug CMakeFiles/BTPostorder.dir/15_BTPostorder.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\BTPostorder.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = BTPostorder.exe
+  TARGET_IMPLIB = libBTPostorder.dll.a
+  TARGET_PDB = BTPostorder.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -264,17 +198,13 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build BTInorder: phony BTInorder.exe
+
+build BTPostorder: phony BTPostorder.exe
+
 build BTPreorder: phony BTPreorder.exe
 
-build EveryPalind: phony EveryPalind.exe
-
-build Plaindrome: phony Plaindrome.exe
-
-build Quicksort: phony Quicksort.exe
-
-build Recursion: phony Recursion.exe
-
-build Test: phony Test.exe
+build INOSuccessor: phony INOSuccessor.exe
 
 # =============================================================================
 # Folder targets.
@@ -284,7 +214,7 @@ build Test: phony Test.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony Recursion.exe Quicksort.exe Plaindrome.exe Test.exe EveryPalind.exe BTPreorder.exe
+build all: phony BTPreorder.exe BTInorder.exe INOSuccessor.exe BTPostorder.exe
 
 # =============================================================================
 # Built-in targets

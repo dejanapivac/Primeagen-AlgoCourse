@@ -41,105 +41,6 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target BTPreorder
-
-
-#############################################
-# Order-only phony target for BTPreorder
-
-build cmake_object_order_depends_target_BTPreorder: phony || CMakeFiles/BTPreorder.dir
-
-build CMakeFiles/BTPreorder.dir/12_BTPreorder.cpp.obj: CXX_COMPILER__BTPreorder_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/12_BTPreorder.cpp || cmake_object_order_depends_target_BTPreorder
-  DEP_FILE = CMakeFiles\BTPreorder.dir\12_BTPreorder.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\BTPreorder.dir
-  OBJECT_FILE_DIR = CMakeFiles\BTPreorder.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target BTPreorder
-
-
-#############################################
-# Link the executable BTPreorder.exe
-
-build BTPreorder.exe: CXX_EXECUTABLE_LINKER__BTPreorder_Debug CMakeFiles/BTPreorder.dir/12_BTPreorder.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\BTPreorder.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = BTPreorder.exe
-  TARGET_IMPLIB = libBTPreorder.dll.a
-  TARGET_PDB = BTPreorder.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target BTInorder
-
-
-#############################################
-# Order-only phony target for BTInorder
-
-build cmake_object_order_depends_target_BTInorder: phony || CMakeFiles/BTInorder.dir
-
-build CMakeFiles/BTInorder.dir/13_BTInorder.cpp.obj: CXX_COMPILER__BTInorder_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/13_BTInorder.cpp || cmake_object_order_depends_target_BTInorder
-  DEP_FILE = CMakeFiles\BTInorder.dir\13_BTInorder.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\BTInorder.dir
-  OBJECT_FILE_DIR = CMakeFiles\BTInorder.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target BTInorder
-
-
-#############################################
-# Link the executable BTInorder.exe
-
-build BTInorder.exe: CXX_EXECUTABLE_LINKER__BTInorder_Debug CMakeFiles/BTInorder.dir/13_BTInorder.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\BTInorder.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = BTInorder.exe
-  TARGET_IMPLIB = libBTInorder.dll.a
-  TARGET_PDB = BTInorder.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target INOSuccessor
-
-
-#############################################
-# Order-only phony target for INOSuccessor
-
-build cmake_object_order_depends_target_INOSuccessor: phony || CMakeFiles/INOSuccessor.dir
-
-build CMakeFiles/INOSuccessor.dir/14_LC510_INOSuccessor.cpp.obj: CXX_COMPILER__INOSuccessor_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/14_LC510_INOSuccessor.cpp || cmake_object_order_depends_target_INOSuccessor
-  DEP_FILE = CMakeFiles\INOSuccessor.dir\14_LC510_INOSuccessor.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\INOSuccessor.dir
-  OBJECT_FILE_DIR = CMakeFiles\INOSuccessor.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target INOSuccessor
-
-
-#############################################
-# Link the executable INOSuccessor.exe
-
-build INOSuccessor.exe: CXX_EXECUTABLE_LINKER__INOSuccessor_Debug CMakeFiles/INOSuccessor.dir/14_LC510_INOSuccessor.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\INOSuccessor.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = INOSuccessor.exe
-  TARGET_IMPLIB = libINOSuccessor.dll.a
-  TARGET_PDB = INOSuccessor.exe.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target BTPostorder
 
 
@@ -148,11 +49,11 @@ build INOSuccessor.exe: CXX_EXECUTABLE_LINKER__INOSuccessor_Debug CMakeFiles/INO
 
 build cmake_object_order_depends_target_BTPostorder: phony || CMakeFiles/BTPostorder.dir
 
-build CMakeFiles/BTPostorder.dir/15_BTPostorder.cpp.obj: CXX_COMPILER__BTPostorder_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/15_BTPostorder.cpp || cmake_object_order_depends_target_BTPostorder
-  DEP_FILE = CMakeFiles\BTPostorder.dir\15_BTPostorder.cpp.obj.d
+build CMakeFiles/BTPostorder.dir/BinaryTree/15_BTPostorder.cpp.obj: CXX_COMPILER__BTPostorder_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/BinaryTree/15_BTPostorder.cpp || cmake_object_order_depends_target_BTPostorder
+  DEP_FILE = CMakeFiles\BTPostorder.dir\BinaryTree\15_BTPostorder.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\BTPostorder.dir
-  OBJECT_FILE_DIR = CMakeFiles\BTPostorder.dir
+  OBJECT_FILE_DIR = CMakeFiles\BTPostorder.dir\BinaryTree
 
 
 # =============================================================================
@@ -162,7 +63,7 @@ build CMakeFiles/BTPostorder.dir/15_BTPostorder.cpp.obj: CXX_COMPILER__BTPostord
 #############################################
 # Link the executable BTPostorder.exe
 
-build BTPostorder.exe: CXX_EXECUTABLE_LINKER__BTPostorder_Debug CMakeFiles/BTPostorder.dir/15_BTPostorder.cpp.obj
+build BTPostorder.exe: CXX_EXECUTABLE_LINKER__BTPostorder_Debug CMakeFiles/BTPostorder.dir/BinaryTree/15_BTPostorder.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\BTPostorder.dir
@@ -171,6 +72,72 @@ build BTPostorder.exe: CXX_EXECUTABLE_LINKER__BTPostorder_Debug CMakeFiles/BTPos
   TARGET_FILE = BTPostorder.exe
   TARGET_IMPLIB = libBTPostorder.dll.a
   TARGET_PDB = BTPostorder.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target BreadthFirstS
+
+
+#############################################
+# Order-only phony target for BreadthFirstS
+
+build cmake_object_order_depends_target_BreadthFirstS: phony || CMakeFiles/BreadthFirstS.dir
+
+build CMakeFiles/BreadthFirstS.dir/BinaryTree/16_BTBreadthFirstSearch.cpp.obj: CXX_COMPILER__BreadthFirstS_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/BinaryTree/16_BTBreadthFirstSearch.cpp || cmake_object_order_depends_target_BreadthFirstS
+  DEP_FILE = CMakeFiles\BreadthFirstS.dir\BinaryTree\16_BTBreadthFirstSearch.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\BreadthFirstS.dir
+  OBJECT_FILE_DIR = CMakeFiles\BreadthFirstS.dir\BinaryTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BreadthFirstS
+
+
+#############################################
+# Link the executable BreadthFirstS.exe
+
+build BreadthFirstS.exe: CXX_EXECUTABLE_LINKER__BreadthFirstS_Debug CMakeFiles/BreadthFirstS.dir/BinaryTree/16_BTBreadthFirstSearch.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\BreadthFirstS.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = BreadthFirstS.exe
+  TARGET_IMPLIB = libBreadthFirstS.dll.a
+  TARGET_PDB = BreadthFirstS.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target CompareTrees
+
+
+#############################################
+# Order-only phony target for CompareTrees
+
+build cmake_object_order_depends_target_CompareTrees: phony || CMakeFiles/CompareTrees.dir
+
+build CMakeFiles/CompareTrees.dir/17_CompareTrees.cpp.obj: CXX_COMPILER__CompareTrees_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/17_CompareTrees.cpp || cmake_object_order_depends_target_CompareTrees
+  DEP_FILE = CMakeFiles\CompareTrees.dir\17_CompareTrees.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CompareTrees.dir
+  OBJECT_FILE_DIR = CMakeFiles\CompareTrees.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CompareTrees
+
+
+#############################################
+# Link the executable CompareTrees.exe
+
+build CompareTrees.exe: CXX_EXECUTABLE_LINKER__CompareTrees_Debug CMakeFiles/CompareTrees.dir/17_CompareTrees.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\CompareTrees.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = CompareTrees.exe
+  TARGET_IMPLIB = libCompareTrees.dll.a
+  TARGET_PDB = CompareTrees.exe.dbg
 
 
 #############################################
@@ -198,13 +165,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build BTInorder: phony BTInorder.exe
-
 build BTPostorder: phony BTPostorder.exe
 
-build BTPreorder: phony BTPreorder.exe
+build BreadthFirstS: phony BreadthFirstS.exe
 
-build INOSuccessor: phony INOSuccessor.exe
+build CompareTrees: phony CompareTrees.exe
 
 # =============================================================================
 # Folder targets.
@@ -214,7 +179,7 @@ build INOSuccessor: phony INOSuccessor.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony BTPreorder.exe BTInorder.exe INOSuccessor.exe BTPostorder.exe
+build all: phony BTPostorder.exe BreadthFirstS.exe CompareTrees.exe
 
 # =============================================================================
 # Built-in targets

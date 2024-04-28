@@ -41,103 +41,136 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target BTPostorder
+# Object build statements for EXECUTABLE target Test
 
 
 #############################################
-# Order-only phony target for BTPostorder
+# Order-only phony target for Test
 
-build cmake_object_order_depends_target_BTPostorder: phony || CMakeFiles/BTPostorder.dir
+build cmake_object_order_depends_target_Test: phony || CMakeFiles/Test.dir
 
-build CMakeFiles/BTPostorder.dir/BinaryTree/15_BTPostorder.cpp.obj: CXX_COMPILER__BTPostorder_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/BinaryTree/15_BTPostorder.cpp || cmake_object_order_depends_target_BTPostorder
-  DEP_FILE = CMakeFiles\BTPostorder.dir\BinaryTree\15_BTPostorder.cpp.obj.d
+build CMakeFiles/Test.dir/Test.cpp.obj: CXX_COMPILER__Test_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/Test.cpp || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles\Test.dir\Test.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\BTPostorder.dir
-  OBJECT_FILE_DIR = CMakeFiles\BTPostorder.dir\BinaryTree
+  OBJECT_DIR = CMakeFiles\Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Test.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target BTPostorder
+# Link build statements for EXECUTABLE target Test
 
 
 #############################################
-# Link the executable BTPostorder.exe
+# Link the executable Test.exe
 
-build BTPostorder.exe: CXX_EXECUTABLE_LINKER__BTPostorder_Debug CMakeFiles/BTPostorder.dir/BinaryTree/15_BTPostorder.cpp.obj
+build Test.exe: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/Test.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\BTPostorder.dir
+  OBJECT_DIR = CMakeFiles\Test.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = BTPostorder.exe
-  TARGET_IMPLIB = libBTPostorder.dll.a
-  TARGET_PDB = BTPostorder.exe.dbg
+  TARGET_FILE = Test.exe
+  TARGET_IMPLIB = libTest.dll.a
+  TARGET_PDB = Test.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target BreadthFirstS
+# Object build statements for EXECUTABLE target TestTest
 
 
 #############################################
-# Order-only phony target for BreadthFirstS
+# Order-only phony target for TestTest
 
-build cmake_object_order_depends_target_BreadthFirstS: phony || CMakeFiles/BreadthFirstS.dir
+build cmake_object_order_depends_target_TestTest: phony || CMakeFiles/TestTest.dir
 
-build CMakeFiles/BreadthFirstS.dir/BinaryTree/16_BTBreadthFirstSearch.cpp.obj: CXX_COMPILER__BreadthFirstS_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/BinaryTree/16_BTBreadthFirstSearch.cpp || cmake_object_order_depends_target_BreadthFirstS
-  DEP_FILE = CMakeFiles\BreadthFirstS.dir\BinaryTree\16_BTBreadthFirstSearch.cpp.obj.d
+build CMakeFiles/TestTest.dir/TestTest.cpp.obj: CXX_COMPILER__TestTest_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/TestTest.cpp || cmake_object_order_depends_target_TestTest
+  DEP_FILE = CMakeFiles\TestTest.dir\TestTest.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\BreadthFirstS.dir
-  OBJECT_FILE_DIR = CMakeFiles\BreadthFirstS.dir\BinaryTree
+  OBJECT_DIR = CMakeFiles\TestTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\TestTest.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target BreadthFirstS
+# Link build statements for EXECUTABLE target TestTest
 
 
 #############################################
-# Link the executable BreadthFirstS.exe
+# Link the executable TestTest.exe
 
-build BreadthFirstS.exe: CXX_EXECUTABLE_LINKER__BreadthFirstS_Debug CMakeFiles/BreadthFirstS.dir/BinaryTree/16_BTBreadthFirstSearch.cpp.obj
+build TestTest.exe: CXX_EXECUTABLE_LINKER__TestTest_Debug CMakeFiles/TestTest.dir/TestTest.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\BreadthFirstS.dir
+  OBJECT_DIR = CMakeFiles\TestTest.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = BreadthFirstS.exe
-  TARGET_IMPLIB = libBreadthFirstS.dll.a
-  TARGET_PDB = BreadthFirstS.exe.dbg
+  TARGET_FILE = TestTest.exe
+  TARGET_IMPLIB = libTestTest.dll.a
+  TARGET_PDB = TestTest.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target CompareTrees
+# Object build statements for EXECUTABLE target BinarySearch
 
 
 #############################################
-# Order-only phony target for CompareTrees
+# Order-only phony target for BinarySearch
 
-build cmake_object_order_depends_target_CompareTrees: phony || CMakeFiles/CompareTrees.dir
+build cmake_object_order_depends_target_BinarySearch: phony || CMakeFiles/BinarySearch.dir
 
-build CMakeFiles/CompareTrees.dir/17_CompareTrees.cpp.obj: CXX_COMPILER__CompareTrees_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/17_CompareTrees.cpp || cmake_object_order_depends_target_CompareTrees
-  DEP_FILE = CMakeFiles\CompareTrees.dir\17_CompareTrees.cpp.obj.d
+build CMakeFiles/BinarySearch.dir/BinaryTree/18_BinarySearchTree.cpp.obj: CXX_COMPILER__BinarySearch_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/BinaryTree/18_BinarySearchTree.cpp || cmake_object_order_depends_target_BinarySearch
+  DEP_FILE = CMakeFiles\BinarySearch.dir\BinaryTree\18_BinarySearchTree.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\CompareTrees.dir
-  OBJECT_FILE_DIR = CMakeFiles\CompareTrees.dir
+  OBJECT_DIR = CMakeFiles\BinarySearch.dir
+  OBJECT_FILE_DIR = CMakeFiles\BinarySearch.dir\BinaryTree
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target CompareTrees
+# Link build statements for EXECUTABLE target BinarySearch
 
 
 #############################################
-# Link the executable CompareTrees.exe
+# Link the executable BinarySearch.exe
 
-build CompareTrees.exe: CXX_EXECUTABLE_LINKER__CompareTrees_Debug CMakeFiles/CompareTrees.dir/17_CompareTrees.cpp.obj
+build BinarySearch.exe: CXX_EXECUTABLE_LINKER__BinarySearch_Debug CMakeFiles/BinarySearch.dir/BinaryTree/18_BinarySearchTree.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\CompareTrees.dir
+  OBJECT_DIR = CMakeFiles\BinarySearch.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = CompareTrees.exe
-  TARGET_IMPLIB = libCompareTrees.dll.a
-  TARGET_PDB = CompareTrees.exe.dbg
+  TARGET_FILE = BinarySearch.exe
+  TARGET_IMPLIB = libBinarySearch.dll.a
+  TARGET_PDB = BinarySearch.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Heap
+
+
+#############################################
+# Order-only phony target for Heap
+
+build cmake_object_order_depends_target_Heap: phony || CMakeFiles/Heap.dir
+
+build CMakeFiles/Heap.dir/Data_Struct/19_Heap.cpp.obj: CXX_COMPILER__Heap_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/Data_Struct/19_Heap.cpp || cmake_object_order_depends_target_Heap
+  DEP_FILE = CMakeFiles\Heap.dir\Data_Struct\19_Heap.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Heap.dir
+  OBJECT_FILE_DIR = CMakeFiles\Heap.dir\Data_Struct
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Heap
+
+
+#############################################
+# Link the executable Heap.exe
+
+build Heap.exe: CXX_EXECUTABLE_LINKER__Heap_Debug CMakeFiles/Heap.dir/Data_Struct/19_Heap.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Heap.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Heap.exe
+  TARGET_IMPLIB = libHeap.dll.a
+  TARGET_PDB = Heap.exe.dbg
 
 
 #############################################
@@ -165,11 +198,13 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build BTPostorder: phony BTPostorder.exe
+build BinarySearch: phony BinarySearch.exe
 
-build BreadthFirstS: phony BreadthFirstS.exe
+build Heap: phony Heap.exe
 
-build CompareTrees: phony CompareTrees.exe
+build Test: phony Test.exe
+
+build TestTest: phony TestTest.exe
 
 # =============================================================================
 # Folder targets.
@@ -179,7 +214,7 @@ build CompareTrees: phony CompareTrees.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony BTPostorder.exe BreadthFirstS.exe CompareTrees.exe
+build all: phony Test.exe TestTest.exe BinarySearch.exe Heap.exe
 
 # =============================================================================
 # Built-in targets

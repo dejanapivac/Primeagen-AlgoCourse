@@ -32,7 +32,7 @@ vector<int> preorder_BT(BinaryNode *head) {
 }
 
 int main() {
-    auto *root = new BinaryNode(6);
+//    auto *root = new BinaryNode(6);
 //    root->left = new BinaryNode(4);
 //    root->right = new BinaryNode(2);
 //    root->left->left = new BinaryNode(5);
@@ -41,10 +41,17 @@ int main() {
 //    root->right->right = new BinaryNode(34);
 //    root->left->left->left = new BinaryNode(76);
 
+//    root->left = new BinaryNode(2);
+//    root->right = new BinaryNode(3);
+//    root->left->left = new BinaryNode(4);
+//    root->left->right = new BinaryNode(5);
+
+    BinaryNode* root = new BinaryNode(1);
     root->left = new BinaryNode(2);
     root->right = new BinaryNode(3);
     root->left->left = new BinaryNode(4);
-    root->left->right = new BinaryNode(5);
+    root->right->right = new BinaryNode(5);
+    root->left->left->left = new BinaryNode(6);
 
     vector<int> result = preorder_BT(root);
 

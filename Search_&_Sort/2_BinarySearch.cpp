@@ -5,6 +5,7 @@ using namespace std;
 bool binary_search(vector<int> arr, int number){
     int low = 0;
     int high = arr.size();
+    // logn
     do{
         int mid = low + ((high - low)/2);
         int value = arr[mid];

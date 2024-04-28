@@ -27,7 +27,7 @@ bool compareTrees(BinaryNode* a, BinaryNode* b) {
 
     // 3. case
     // value check
-    if(a->value != b->value) {  // ZASTO NIJE ==
+    if(a->value != b->value) {
         return false;
     }
 

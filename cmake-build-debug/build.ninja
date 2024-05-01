@@ -172,6 +172,39 @@ build Heap.exe: CXX_EXECUTABLE_LINKER__Heap_Debug CMakeFiles/Heap.dir/Data_Struc
   TARGET_IMPLIB = libHeap.dll.a
   TARGET_PDB = Heap.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target BFSMatrix
+
+
+#############################################
+# Order-only phony target for BFSMatrix
+
+build cmake_object_order_depends_target_BFSMatrix: phony || CMakeFiles/BFSMatrix.dir
+
+build CMakeFiles/BFSMatrix.dir/Graphs/20_BFSMatrix.cpp.obj: CXX_COMPILER__BFSMatrix_unscanned_Debug C$:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/Graphs/20_BFSMatrix.cpp || cmake_object_order_depends_target_BFSMatrix
+  DEP_FILE = CMakeFiles\BFSMatrix.dir\Graphs\20_BFSMatrix.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\BFSMatrix.dir
+  OBJECT_FILE_DIR = CMakeFiles\BFSMatrix.dir\Graphs
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BFSMatrix
+
+
+#############################################
+# Link the executable BFSMatrix.exe
+
+build BFSMatrix.exe: CXX_EXECUTABLE_LINKER__BFSMatrix_Debug CMakeFiles/BFSMatrix.dir/Graphs/20_BFSMatrix.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\BFSMatrix.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = BFSMatrix.exe
+  TARGET_IMPLIB = libBFSMatrix.dll.a
+  TARGET_PDB = BFSMatrix.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -198,6 +231,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build BFSMatrix: phony BFSMatrix.exe
+
 build BinarySearch: phony BinarySearch.exe
 
 build Heap: phony Heap.exe
@@ -214,7 +249,7 @@ build TestTest: phony TestTest.exe
 #############################################
 # Folder: C:/Dejana/Code/TheLastAlgCourse-Primeagen/Primeagen-AlgorithmClass/cmake-build-debug
 
-build all: phony Test.exe TestTest.exe BinarySearch.exe Heap.exe
+build all: phony Test.exe TestTest.exe BinarySearch.exe Heap.exe BFSMatrix.exe
 
 # =============================================================================
 # Built-in targets
